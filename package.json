@@ -1,0 +1,27 @@
+{
+  "name": "tailwind-ast-scoper",
+  "version": "1.1.1",
+  "description": "Scoped Tailwind config manager using AST",
+  "main": "lib/core.js",
+  "bin": {
+    "tailwind-scope": "bin/index.js"
+  },
+  "keywords": [
+    "tailwind",
+    "ast",
+    "scoper",
+    "vite",
+    "react"
+  ],
+  "author": "Matin Senior",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/parser": "^7.24.4",
+    "@babel/traverse": "^7.24.4",
+    "@babel/generator": "^7.24.4",
+    "chokidar": "^3.5.3",
+    "lodash.merge": "^4.6.2",
+    "commander": "^11.1.0",
+    "glob": "^10.3.10"
+  }
+}
