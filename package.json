@@ -1,7 +1,7 @@
 {
   "name": "tailwind-ast-scoper",
-  "version": "1.1.1",
-  "description": "Scoped Tailwind config manager using AST",
+  "version": "1.1.21",
+  "description": "Scoped Tailwind config manager using AST. Safely handle multi-config, v3/v4, and white-label Tailwind projects.",
   "main": "lib/core.js",
   "bin": {
     "tailwind-scope": "bin/index.js"
@@ -11,10 +11,23 @@
     "ast",
     "scoper",
     "vite",
-    "react"
+    "react",
+    "multi-theme",
+    "white-label"
   ],
   "author": "Matin Senior",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Matin-senior/tailwind-ast-scoper"
+  },
+  "bugs": {
+    "url": "https://github.com/Matin-senior/tailwind-ast-scoper/issues"
+  },
+  "homepage": "https://github.com/Matin-senior/tailwind-ast-scoper#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "dependencies": {
     "@babel/parser": "^7.24.4",
     "@babel/traverse": "^7.24.4",
@@ -22,6 +35,16 @@
     "chokidar": "^3.5.3",
     "lodash.merge": "^4.6.2",
     "commander": "^11.1.0",
-    "glob": "^10.3.10"
-  }
+    "glob": "^10.3.10",
+    "kleur": "^4.1.5" 
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ]
 }
